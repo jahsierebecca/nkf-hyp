@@ -1,5 +1,4 @@
-
-  $( document ).ready(function() {
+$( document ).ready(function() {
     
   	$("#water").on('click', function() {
   		$("#waterP").toggleClass("hidden");
@@ -20,5 +19,5 @@
   	});
 
 
-  });
+});
  
