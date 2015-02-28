@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic|Open+Sans:300);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic|Open+Sans:300,400);
 /*font-family: 'Merriweather', serif;
 font-family: 'Open Sans', sans-serif;*/
 body {
@@ -8,7 +8,7 @@ body {
   margin: 0; }
 
 #pageBody {
-  padding: 5%; }
+  margin-top: 100px; }
 
 nav {
   color: white;
@@ -46,7 +46,10 @@ body * {
   box-sizing: border-box; }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Merriweather', serif; }
+  /*font-family: 'Merriweather', serif;*/ }
+
+h2 {
+  font-size: 4vw; }
 
 h1 {
   text-align: center;
@@ -60,7 +63,7 @@ i {
 .row {
   box-sizing: border-box;
   margin: auto;
-  max-width: 1000px; }
+  max-width: 900px; }
 
 .column {
   box-sizing: border-box;
@@ -71,7 +74,8 @@ i {
   padding: 5%; }
 
 .column2 {
-  padding: 5%; }
+  padding: 5%;
+  margin-bottom: 50px; }
 
 .personPic {
   width: 9%;
@@ -99,10 +103,16 @@ i {
   margin: 0 auto;
   text-align: center; }
 
+#kidneys4you {
+  padding: 5%; }
+
 #howToHelpTrio {
   box-sizing: border-box;
   margin: 60px auto 30px;
   text-align: center; }
+
+#howToHelpFocus {
+  clear: both; }
 
 #exerciseC {
   background-color: #f1c40f; }
@@ -124,6 +134,41 @@ i {
 
 #spacer {
   height: 400px; }
+
+#facts {
+  clear: both;
+  width: 100%;
+  padding: 5%;
+  font-weight: 300;
+  color: white; }
+  #facts ul {
+    list-style: none;
+    text-align: center;
+    margin: auto;
+    max-width: 800px; }
+    #facts ul li {
+      font-size: 3vw;
+      margin: 15px; }
+
+#games {
+  color: #e74c3c;
+  height: 400px; }
+
+#trivia {
+  color: #9b59b6;
+  height: 400px; }
+
+#footer {
+  height: 50px;
+  background-color: #f1c40f; }
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0; }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -159,7 +204,7 @@ i {
     display: inline-block;
     text-align: center;
     box-sizing: border-box;
-    margin: 15px;
+    margin: 0 30px;
     /*		img {
     			width: 100%;
     		}*/ }
@@ -172,6 +217,10 @@ i {
   .column2 {
     width: 66%;
     float: left; } }
+#facts {
+  background-color: #3498db;
+  font-size: 2.2vw; }
+
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   body {
