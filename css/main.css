@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic|Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic|Open+Sans:300);
 /*font-family: 'Merriweather', serif;
 font-family: 'Open Sans', sans-serif;*/
 body {
@@ -11,25 +11,32 @@ body {
   padding: 5%; }
 
 nav {
+  color: white;
   background-color: #16a085;
   min-height: 75px;
-  padding: 2% 5% 0 5%; }
-  nav .logo {
-    float: left; }
+  padding: 1% 5% 0 5%; }
+  nav .logo h3 {
+    float: left;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif; }
   nav .nav-icons {
-    float: right; }
+    float: right;
+    margin-top: 15px;
+    border: 1px solid white;
+    font-size: 24px; }
   nav .menu {
     background-color: #16a085;
     clear: both; }
     nav .menu ul {
       padding: 0;
-      margin: 0; }
+      margin: 75px 0 0 0; }
       nav .menu ul li {
         list-style: none;
         text-align: right;
         border-top: 1px solid white;
         padding: 15px 0; }
         nav .menu ul li a {
+          color: white;
           text-decoration: none; }
 
 /*#last-nav {
@@ -81,7 +88,8 @@ i {
   box-sizing: border-box; }
 
 .column > h4 {
-  text-decoration: underline; }
+  padding: 15px;
+  border: 1px solid; }
 
 .threeThings:hover {
   cursor: pointer; }
@@ -93,7 +101,7 @@ i {
 
 #howToHelpTrio {
   box-sizing: border-box;
-  margin: 100px auto 30px;
+  margin: 60px auto 30px;
   text-align: center; }
 
 #exerciseC {
@@ -123,10 +131,38 @@ i {
     background-color: blue; } }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 768px) {
+  nav {
+    padding: 1% 5%;
+    /*		background-color: $red;*/
+    /*		.hidden {
+    			display: inline-block;
+    			float: right;
+    		}*/ }
+    nav .logo {
+      float: left; }
+    nav .nav-icons {
+      display: none; }
+    nav #nav-menu {
+      display: inline-block;
+      float: right; }
+    nav .menu {
+      clear: none; }
+      nav .menu ul {
+        margin-top: 0; }
+        nav .menu ul li {
+          margin: 0 20px;
+          border: none;
+          display: inline-block; }
+
   .column {
+    /*		width: 33%;*/
     display: inline-block;
     text-align: center;
-    padding: 5vh 8%; }
+    box-sizing: border-box;
+    margin: 15px;
+    /*		img {
+    			width: 100%;
+    		}*/ }
 
   .column1 {
     width: 33%;
