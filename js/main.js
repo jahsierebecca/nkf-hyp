@@ -19,6 +19,12 @@
   		$("#waterP").addClass("hidden");	
   	});
 
+  	$(".nav-icons").on('click', function() {
+	$(".menu").slideToggle("hidden");
+ //  	$("#exerciseP").addClass("hidden");
+	// $("#waterP").addClass("hidden");	
+	});
+
 
   });
  
