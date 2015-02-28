@@ -41,6 +41,8 @@ i {
 
 .row {
 	box-sizing: border-box;
+	margin: auto;
+	max-width: 1000px;
 }
 
 .column {
@@ -74,13 +76,25 @@ i {
 	box-sizing: border-box;
 }
 
+.column > h4 {
+	text-decoration: underline;
+}
+
+.threeThings:hover {
+	cursor: pointer;
+} 
+
 /*IDS*/
 #peopleRow {
 	margin: 0 auto;
 	text-align: center;
 }
 
-#howToHelpTrio {}
+#howToHelpTrio {
+	margin: 100px auto 30px;
+	text-align: center;
+}
+
 #howToHelpFocus {}
 
 #exerciseC {
