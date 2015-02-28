@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic|Open+Sans);
+/*font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;*/
+body {
+  background-color: #ecf0f1;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 5%; }
+
+body * {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Merriweather', serif; }
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  /* Some tweener fallback that doesn't look awful */
+  font-size: 5.4vw; }
+
+i {
+  margin: 0 20px; }
+
+.row {
+  box-sizing: border-box; }
+
+.column {
+  display: block; }
+
+.column1 {
+  border: 8px solid #3498db;
+  padding: 5%; }
+
+.column2 {
+  padding: 5%; }
+
+.personPic {
+  width: 9%;
+  margin: 0 auto;
+  display: inline-block; }
+
+.hidden {
+  display: none; }
+
+.red {
+  background-color: red; }
+
+.helpCallout {
+  box-sizing: border-box; }
+
+/*IDS*/
+#peopleRow {
+  margin: 0 auto;
+  text-align: center; }
+
+#exerciseC {
+  background-color: #f1c40f; }
+
+#exercise {
+  color: #f1c40f; }
+
+#foodC {
+  background-color: #e74c3c; }
+
+#food {
+  color: #e74c3c; }
+
+#waterC {
+  background-color: #9b59b6; }
+
+#water {
+  color: #9b59b6; }
+
+#spacer {
+  height: 800px; }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    background-color: blue; } }
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 768px) {
+  .column {
+    display: inline-block;
+    width: 33%;
+    text-align: center; }
+
+  .column1 {
+    width: 33%;
+    float: right;
+    display: inline-block; }
+
+  .column2 {
+    width: 66%;
+    float: left; } }
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  body {
+    background-color: pink; } }

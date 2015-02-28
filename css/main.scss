@@ -1,0 +1,147 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic|Open+Sans);
+
+$blue: rgba(52, 152, 219, 1.0);
+$purple: rgba(155, 89, 182,1.0);
+$red: rgba(231, 76, 60,1.0);
+$yellow: rgba(241, 196, 15,1.0);
+$grey: rgba(236, 240, 241,1.0);
+$border: rgba(52, 73, 94,1.0);
+
+/*font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;*/
+
+body {
+	background-color: $grey;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 5%;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Merriweather', serif;
+}
+
+
+h1 {
+	text-align: center;
+	font-size: 36px; /* Some tweener fallback that doesn't look awful */ 
+	font-size: 5.4vw; 
+}
+
+i {
+	margin: 0 20px;
+}
+
+.fixed {}
+
+.row {
+	box-sizing: border-box;
+}
+
+.column {
+	display: block;
+}
+
+.column1 {
+	border: 8px solid $blue;
+	padding: 5%;
+}
+
+.column2 {
+	padding: 5%;
+}
+
+.personPic {
+	width: 9%;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.hidden {
+	display: none;
+}
+
+.red {
+	background-color: red;
+}
+
+.helpCallout {
+	box-sizing: border-box;
+}
+
+/*IDS*/
+#peopleRow {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#howToHelpTrio {}
+#howToHelpFocus {}
+
+#exerciseC {
+	background-color: $yellow;
+}
+#exercise {
+	color: $yellow;
+}
+
+#foodC {
+	background-color: $red;
+}
+#food {
+	color: $red;
+}
+
+#waterC {
+	background-color: $purple;
+}
+#water {
+	color: $purple;
+}
+
+#spacer {
+	height: 800px;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width : 1024px) {
+	body {
+		background-color: blue;
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width: 768px) {
+	body {
+
+	}
+
+	.column {
+		display: inline-block;
+		width: 33%;
+		text-align: center;
+	}
+
+	.column1 {
+		width: 33%;
+		float: right;
+		display: inline-block;
+	}
+
+	.column2 {
+		width: 66%;
+		float: left;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+	body {
+		background-color: pink;
+	}
+}
