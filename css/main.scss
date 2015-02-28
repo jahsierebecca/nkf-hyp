@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic|Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic|Open+Sans:300);
 
 $blue: rgba(52, 152, 219, 1.0);
 $purple: rgba(155, 89, 182,1.0);
@@ -24,22 +24,31 @@ body {
 }
 
 nav {
+
+	color: white;
 	background-color: $turq;
 	min-height: 75px;
-	padding: 2% 5% 0 5%;
+	padding: 1% 5% 0 5%;
 	.logo {
-
-		float: left
+	 h3 {
+		float: left;
+		font-weight: 300; 	
+	 	font-family: 'Open Sans', sans-serif;
+		}
 	}
 	.nav-icons {
 		float: right;
+		margin-top: 15px;
+		border: 1px solid white;
+		font-size: 24px;
+
 	}
 	.menu {
 		background-color: $turq;
 		clear: both;
 		ul {
 			padding: 0;
-			margin: 0;
+			margin: 75px 0 0 0;
 			li {
 				list-style: none;
 				text-align: right;
@@ -47,6 +56,7 @@ nav {
 				padding: 15px 0; 
 
 				a {
+					color: white;
 					text-decoration: none;
 				}
 			}
@@ -119,7 +129,8 @@ i {
 }
 
 .column > h4 {
-	text-decoration: underline;
+	padding: 15px;
+	border: 1px solid;
 }
 
 
@@ -135,7 +146,7 @@ i {
 
 #howToHelpTrio {
 	box-sizing: border-box;
-	margin: 100px auto 30px;
+	margin: 60px auto 30px;
 	text-align: center;
 }
 
@@ -144,6 +155,7 @@ i {
 #exerciseC {
 	background-color: $yellow;
 }
+
 #exercise {
 	color: $yellow;
 }
@@ -151,6 +163,7 @@ i {
 #foodC {
 	background-color: $red;
 }
+
 #food {
 	color: $red;
 }
@@ -158,6 +171,7 @@ i {
 #waterC {
 	background-color: $purple;
 }
+
 #water {
 	color: $purple;
 }
@@ -179,12 +193,46 @@ i {
 
 	}
 
-
+	nav {
+		padding: 1% 5%;
+/*		background-color: $red;*/
+		.logo {
+			float: left;
+		}
+		.nav-icons {
+			display: none;
+		}
+		#nav-menu {
+			display: inline-block;
+			float: right;
+		}
+		.menu {
+			clear: none;
+			ul {
+				margin-top: 0;
+				li {
+					margin: 0 20px;
+					border: none;
+				display: inline-block;
+			}
+			}
+		}
+/*		.hidden {
+			display: inline-block;
+			float: right;
+		}*/
+	}
 
 	.column {
+/*		width: 33%;*/
 		display: inline-block;
 		text-align: center;
-		padding: 5vh 8%;
+		box-sizing: border-box;
+		margin: 15px;
+/*		img {
+			width: 100%;
+		}*/
+
 	}
 
 	.column1 {

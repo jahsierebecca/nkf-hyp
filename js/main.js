@@ -19,11 +19,26 @@
   		$("#waterP").addClass("hidden");	
   	});
 
+
+
+  	// var width = $( window ).width();
+  	// var widthCap = 768px;
+  	// if (width > widthCap) {
+  	// 	$(".menu").removeClass("hidden");
+  	// }
+
+
   	$(".nav-icons").on('click', function() {
 	$(".menu").slideToggle("hidden");
- //  	$("#exerciseP").addClass("hidden");
-	// $("#waterP").addClass("hidden");	
 	});
+
+
+  	var section = $(window);
+	var width = section.width();
+	var nav = $('.menu');
+	if (width > 768) {
+    	nav.removeClass('hidden');
+	} 
 
 
   });
